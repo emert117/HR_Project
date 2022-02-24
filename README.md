@@ -1,5 +1,6 @@
 Aday Tarafından dolacak Formlar: 
 Kişisel Bilgiler
+https://emert117.github.io/HR_Project/Aday/index.html
 https://form.jotform.com/220406697922965 
 Yabancı Dil Yetkinlikleri
 https://form.jotform.com/220406717776965 
@@ -22,5 +23,6 @@ https://form.jotform.com/220392666148965
  
 Yönetici
 Raporlar
+https://emert117.github.io/HR_Project/Yonetici/index.html
 
 https://indrijunanda.github.io/RuangAdmin/index.html
