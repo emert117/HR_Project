@@ -22,3 +22,5 @@ https://form.jotform.com/220392666148965
  
 Yönetici
 Raporlar
+
+https://indrijunanda.github.io/RuangAdmin/index.html
