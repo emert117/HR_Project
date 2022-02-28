@@ -209,7 +209,7 @@
             <div class="col-lg-12 text-center">
               <p>Merhaba</p>
               <p>İnsan gücünü, hizmet işlevine almak “işe almak” olarak ifade edilmektedir. İşe alma ve seçme, insan kaynaklarının en değerli işlevlerinden biri olarak ifade edilmektedir. Zira işe alım ve seçme süreçleri insan kaynakları yönetiminin kazandırdığı değer bakımından değerlendirildiğinde hem hızlı hem de maddi kazanımı en fazla olan ve kolay fark edilen bir süreçtir. En bilinen tanımıyla işe alım süreci, bir işletmenin ihtiyaçları doğrultusunda oluşan açık pozisyonların doğru biçimde doldurabilmesi için kurum içi yahut farklı dış kaynaklardan müsait ve örtüşen özelliklerdeki adayların tespiti sürecidir </p>
-              <p>İşletmenin ana faaliyet konularından sonra en önemli stratejik süreci işe alım sürecidir. Doğru kişinin doğru göreve getirilmesi, süreç olarak farklı kademe ve kuralları barındırmakta ve bunun profesyonel bir bakış açısı ile yapılması gerekmektedir. İşe alma süreci çok zaman alıcı ve maliyetli olduğundan, işe alınan her çalışanın işletmede bir yatırımı temsil ettiği açıktır. İnsan kaynakları departmanı personeli, işe alım politikasını belirlemek için dış ve iç değişiklikleri ve gelişmeleri ve ortaya çıkan ihtiyaçları dikkate almalıdır. İşletme yapısının dengesini korumak için yeterli sayıda işçi alımının yapılması gerekmektedir.</p>
+
             </div>
           </div>
 
@@ -222,14 +222,14 @@
                   <div class="row align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-uppercase mb-1">Toplam Kullanıcı Sayısı</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">10000</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">10.000</div>
                       <div class="mt-2 mb-0 text-muted text-xs">
                         <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
                         <span>Geçen aydan beri</span>
                       </div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
+                      <i class="fas fa-users fa-2x text-primary"></i>
                     </div>
                   </div>
                 </div>
@@ -249,7 +249,7 @@
                       </div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
+                      <i class="fas fa-users fa-2x text-success"></i>
                     </div>
                   </div>
                 </div>
@@ -269,7 +269,7 @@
                       </div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
+                      <i class="fas fa-users fa-2x text-warning"></i>
                     </div>
                   </div>
                 </div>
@@ -281,8 +281,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Pending Requests</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">Toplam Başvuru (Ağ Uzmanı)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">158</div>
                       <div class="mt-2 mb-0 text-muted text-xs">
                         <span class="text-danger mr-2"><i class="fas fa-arrow-up"></i> 8.10%</span>
                         <span>Geçen aydan beri</span>
@@ -295,6 +295,303 @@
                 </div>
               </div>
             </div>
+
+
+            <!-- Area Chart -->
+            <div class="col-xl-8 col-lg-7">
+              <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Toplam Kullanıcı Sayısı</h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Dropdown Header:</div>
+                      <a class="dropdown-item" href="#">12 ay</a>
+                      <a class="dropdown-item" href="#">6 ay</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">3 ay</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+                        <!-- Message From Customer-->
+                        <div class="col-xl-4 col-lg-5 ">
+                          <div class="card">
+                            <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
+                              <h6 class="m-0 font-weight-bold text-light">Yayında Olan İlanlar</h6>
+                            </div>
+                            <div>
+                              <div class="customer-message align-items-center">
+                                <a class="font-weight-bold" href="#">
+                                  <div class="text-truncate message-title">Ağ Uzmanı
+                                    </div>
+                                  <div class="small text-gray-500 message-time font-weight-bold">Yayınlanma Tarihi · 15.02.2022</div>
+                                </a>
+                              </div>
+                              <div class="customer-message align-items-center">
+                                <a href="#">
+                                  <div class="text-truncate message-title">Siber Güvenlik Uzmanı
+                                  </div>
+                                  <div class="small text-gray-500 message-time">Yayınlanma Tarihi · 25.11.2021</div>
+                                </a>
+                              </div>
+                              <div class="customer-message align-items-center">
+                                <a class="font-weight-bold" href="#">
+                                  <div class="text-truncate message-title">Veritabanı Uzmanı
+                                  </div>
+                                  <div class="small text-gray-500 message-time font-weight-bold">Yayınlanma Tarihi · 22.12.2021</div>
+                                </a>
+                              </div>
+                              <div class="customer-message align-items-center">
+                                <a class="font-weight-bold" href="#">
+                                  <div class="text-truncate message-title">Yazılım Uzmanı
+                                  </div>
+                                  <div class="small text-gray-500 message-time font-weight-bold">Yayınlanma Tarihi · 12.01.2021</div>
+                                </a>
+                              </div>
+                              <div class="customer-message align-items-center">
+                                <a class="font-weight-bold" href="#">
+                                  <div class="text-truncate message-title">Ağ Teknisyeni
+                                  </div>
+                                  <div class="small text-gray-500 message-time font-weight-bold">Yayınlanma Tarihi · 12.01.2021</div>
+                                </a>
+                              </div>
+                              <div class="card-footer text-center">
+                                <a class="m-0 small text-primary card-link" href="#">View More <i
+                                    class="fas fa-chevron-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+
+                        
+
+        <!-- Container Fluid-->
+        <div class="container-fluid" id="container-wrapper">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">DataTables</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./">Home</a></li>
+              <li class="breadcrumb-item">Tables</li>
+              <li class="breadcrumb-item active" aria-current="page">DataTables</li>
+            </ol>
+          </div>
+
+
+            <!-- DataTable with Hover -->
+            <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">DataTables with Hover</h6>
+                </div>
+                <div class="table-responsive p-3">
+                  <table class="table align-items-center table-flush table-hover" id="dataTableHover">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>Sıra Nu.</th>
+                        <th>Aday ID</th>
+                        <th>Ad-Soyad</th>
+                        <th>Puan</th>
+                        <th>Başarı Durumu</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Sıra Nu.</th>
+                        <th>Aday ID</th>
+                        <th>Ad-Soyad</th>
+                        <th>Puan</th>
+                        <th>Başarı Durumu</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>BK2021-5</td>
+                        <td>Aday-5</td>
+                        <td>76.58</td>
+                        <td><span class="badge badge-success">60 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>BK2021-19</td>
+                        <td>Aday-19</td>
+                        <td>66.08</td>
+                        <td><span class="badge badge-success">60 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>BK2021-10</td>
+                        <td>Aday-10</td>
+                        <td>61.62</td>
+                        <td><span class="badge badge-success">60 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>BK2021-8</td>
+                        <td>Aday-8</td>
+                        <td>57.97</td>
+                        <td><span class="badge badge-warning">50 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>BK2021-1</td>
+                        <td>Aday-1</td>
+                        <td>56.33</td>
+                        <td><span class="badge badge-warning">50 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>BK2021-2</td>
+                        <td>Aday-2</td>
+                        <td>52.00</td>
+                        <td><span class="badge badge-warning">50 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>BK2021-18</td>
+                        <td>Aday-18</td>
+                        <td>51.89</td>
+                        <td><span class="badge badge-warning">50 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>BK2021-13</td>
+                        <td>Aday-13</td>
+                        <td>48.95</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>BK2021-7</td>
+                        <td>Aday-7</td>
+                        <td>48.35</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>BK2021-3</td>
+                        <td>Aday-3</td>
+                        <td>47.35</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>BK2021-9</td>
+                        <td>Aday-9</td>
+                        <td>47.30</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>BK2021-14</td>
+                        <td>Aday-14</td>
+                        <td>46.92</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>BK2021-4</td>
+                        <td>Aday-4</td>
+                        <td>46.42</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>BK2021-20</td>
+                        <td>Aday-20</td>
+                        <td>44.56</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>BK2021-16</td>
+                        <td>Aday-16</td>
+                        <td>42.87</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>BK2021-11</td>
+                        <td>Aday-11</td>
+                        <td>42.22</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>BK2021-115</td>
+                        <td>Aday-14</td>
+                        <td>41.24</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>BK2021-12</td>
+                        <td>Aday-12</td>
+                        <td>40.60</td>
+                        <td><span class="badge badge-info">40 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>BK2021-6</td>
+                        <td>Aday-6</td>
+                        <td>38.10</td>
+                        <td><span class="badge badge-secondary">30 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>BK2021-17</td>
+                        <td>Aday-17</td>
+                        <td>33.31</td>
+                        <td><span class="badge badge-secondary">30 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>21</td>
+                        <td>BK2021-21</td>
+                        <td>Aday-21</td>
+                        <td>32.32</td>
+                        <td><span class="badge badge-secondary">30 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>BK2021-22</td>
+                        <td>Aday-22</td>
+                        <td>32.30</td>
+                        <td><span class="badge badge-secondary">30 üstü</span></td>
+                      </tr>
+                      <tr>
+                        <td>23</td>
+                        <td>BK2021-23</td>
+                        <td>Aday-23</td>
+                        <td>31.80</td>
+                        <td><span class="badge badge-secondary">30 üstü</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
 
 
 
@@ -365,6 +662,16 @@
   <script src="js/ruang-admin.min.js"></script>
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="js/demo/chart-area-demo.js"></script>  
+
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#dataTable').DataTable(); // ID From dataTable 
+      $('#dataTableHover').DataTable(); // ID From dataTable with Hover
+    });
+  </script>
 </body>
 
 </html>
