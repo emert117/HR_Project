@@ -32,13 +32,13 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["Aday 5", "Aday 8", "Aday 1", "Aday 7", "Aday 14", "Aday 4"],
+    labels: ["Aday 5", "Aday 19", "Aday 1", "Aday 2", "Aday 18", "Aday 13"],
     datasets: [{
       label: "Revenue",
       backgroundColor: "#4e73df",
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#4e73df",
-      data: [76.58, 57.97, 56.33, 48.35, 46.92, 46.42],
+      data: [76.58, 66.08, 56.33, 52.00, 51.89, 48.95],
     }],
   },
   options: {

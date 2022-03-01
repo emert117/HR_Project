@@ -7,9 +7,9 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["60 üstü", "50 üstü", "40 üstü", "30 üstü"],
+    labels: ["60 üstü", "50 üstü", "40 üstü", "30 üstü", "20 üstü", "20 alt"],
     datasets: [{
-      data: [1, 2, 5, 1,],
+      data: [3, 4, 11, 13, 29, 98],
       backgroundColor: ['#66bb6a', '#ffa426', '#3abaf4', '#757575', '#6777EF', '#fc544b'],
       hoverBackgroundColor: ['#66bb6a', '#ffa426', '#3abaf4', '#757575', '#fc544b'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
