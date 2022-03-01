@@ -34,7 +34,6 @@
       <div class="sidebar-heading">
         Formlar
       </div>
-
       <li class="nav-item">
         <a class="nav-link" href="whatif.html">
           <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -48,7 +47,6 @@
           <span>Goal-Seeking Analizi</span>
         </a>
       </li>
-
 
       <hr class="sidebar-divider">
       <div class="version" id="version-ruangadmin"></div>
@@ -197,23 +195,77 @@
         </nav>
         <!-- Topbar -->
 
+
+
         <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Anasayfa</h1>
+            <h1 class="h3 mb-0 text-gray-800">Goal-Seeking (İlk 9 Aday İçin Hangi Kriterler Seçilmeli)</h1>
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./">HR</a></li>
               <li class="breadcrumb-item active" aria-current="page">Yönetici</li>
             </ol>
           </div>
 
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h1 class="h3 mb-0 text-gray-800">Goal-Seeking Analizi</h1>
-              <p>Goal-seeking analizi bir bakıma what-if ve duyarlılık analizinde uygulanan yöntemin tersidir. Goal-seeking, zaten bilinen bir çıktı değerine dayalı olarak girdi değerinizi bulmakla ilgili süreci tanımlamak için kullanılan genel bir terimdir. Özetle, beklenen ve hedeflenen çıktılara ulaşmak için gerekli olan girdi değerlerini tespit etmeye yönelik analitik bir yaklaşımdır. Örnek. pazar payını %20 artırabilmek için ne kadarlık bir reklam bütçesi gereklidir?  </p>
-              
+
+
+
+
+            <!-- Simple Tables -->
+            <div class="card">
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Kriterler</h6>
+              </div>
+              <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Sıra Nu.</th>
+                      <th>Kriter ID</th>
+                      <th>Kriter İsmi</th>
+                      <th>Mevcut Global Ağırlığı</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2.1.1.2</td>
+                      <td>Yüksek Lisans Mezuniyet Durumu</td>
+                      <td>0.0099</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2.1.1.5</td>
+                      <td>Ehliyet Durumu</td>
+                      <td>0.0178</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>2.1.2.1</td>
+                      <td>CCNA</td>
+                      <td>0.0497</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>2.1.2.2</td>
+                      <td>CCNP Enterprise</td>
+                      <td>0.0646</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>2.1.2.7</td>
+                      <td>LPIC-1</td>
+                      <td>0.0270</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
+
+
+            <div>	
+              &nbsp&nbsp&nbsp 
+            </div>  
 
 
           <div class="row mb-3">
@@ -263,15 +315,15 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Toplam Başvuru (Tüm İlanlar)</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">435</div>
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">Toplam Başvuru (Ağ Uzmanı)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">435</div>
                       <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 6.4%</span>
+                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 8.10%</span>
                         <span>Geçen aydan beri</span>
                       </div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-warning"></i>
+                      <i class="fas fa-users fa-2x text-info"></i>
                     </div>
                   </div>
                 </div>
@@ -283,7 +335,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Toplam Başvuru (Ağ Uzmanı)</div>
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">Aranan Kriterde Aday</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">158</div>
                       <div class="mt-2 mb-0 text-muted text-xs">
                         <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 8.10%</span>
@@ -298,140 +350,12 @@
               </div>
             </div>
 
+            <div>	
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
+            </div>  
 
 
 
-
-
-
-
-
-
-
-
-            
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Toplam Kullanıcı Sayısı</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                      aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Son Zamanlar:</div>
-                      <a class="dropdown-item" href="#">12 ay</a>
-                      <a class="dropdown-item" href="#">6 ay</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">3 ay</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-                        <!-- Message From Customer-->
-                        <div class="col-xl-4 col-lg-5 ">
-                          <div class="card">
-                            <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
-                              <h6 class="m-0 font-weight-bold text-light">Yayında Olan İlanlar</h6>
-                            </div>
-                            <div>
-                              <div class="customer-message align-items-center">
-                                <a class="font-weight-bold" href="#">
-                                  <div class="text-truncate message-title">Ağ Uzmanı
-                                    </div>
-                                  <div class="small text-gray-500 message-time font-weight-bold">Yayınlanma Tarihi · 15.02.2022</div>
-                                </a>
-                              </div>
-                              <div class="customer-message align-items-center">
-                                <a href="#">
-                                  <div class="text-truncate message-title">Siber Güvenlik Uzmanı
-                                  </div>
-                                  <div class="small text-gray-500 message-time">Yayınlanma Tarihi · 25.11.2021</div>
-                                </a>
-                              </div>
-                              <div class="customer-message align-items-center">
-                                <a class="font-weight-bold" href="#">
-                                  <div class="text-truncate message-title">Veritabanı Uzmanı
-                                  </div>
-                                  <div class="small text-gray-500 message-time font-weight-bold">Yayınlanma Tarihi · 22.12.2021</div>
-                                </a>
-                              </div>
-                              <div class="customer-message align-items-center">
-                                <a class="font-weight-bold" href="#">
-                                  <div class="text-truncate message-title">Yazılım Uzmanı
-                                  </div>
-                                  <div class="small text-gray-500 message-time font-weight-bold">Yayınlanma Tarihi · 12.01.2021</div>
-                                </a>
-                              </div>
-                              <div class="customer-message align-items-center">
-                                <a class="font-weight-bold" href="#">
-                                  <div class="text-truncate message-title">Ağ Teknisyeni
-                                  </div>
-                                  <div class="small text-gray-500 message-time font-weight-bold">Yayınlanma Tarihi · 12.01.2021</div>
-                                </a>
-                              </div>
-                              <div class="card-footer text-center">
-                                <a class="m-0 small text-primary card-link" href="#">Daha Fazlası <i
-                                    class="fas fa-chevron-right"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-
-        <div class="row">
-
-                        
-
-        <!-- Container Fluid-->
-        <div class="container-fluid" id="container-wrapper">
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-
-
-              <!-- modal vertically centered -->
-
-              <div class="col-md-4">
-                <a href="Goal-Seek-9.html" class="btn btn-primary">İlk 9 Aday İçin Hangi Kriterler Seçilmeli</a>
-                <hr>
-              </div>
-              <div class="col-md-4">
-                <a href="Goal-Seek-14.html" class="btn btn-primary">İlk 14 Aday İçin Hangi Kriterler Seçilmeli</a>
-                <hr>
-              </div>
-              <div class="col-md-4">
-                <a href="Goal-Seek-16.html" class="btn btn-primary">İlk 16 Aday İçin Hangi Kriterler Seçilmeli</a>
-                <hr>
-              </div>
-
-            </div>
-            <div class="col-lg-6">
-
-
-
-          </div>
-
-
-
-          </div>
-
-
-
-
-        </div>
-          <!--Row-->
 
 
 
@@ -486,7 +410,8 @@
   <script src="js/ruang-admin.min.js"></script>
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="js/demo/chart-area-demo.js"></script>  
-  <script src="js/demo/chart-pie-demo-Anasayfa.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/chart-bar-demo.js"></script>
 
   <script src="vendor/datatables/jquery.dataTables.min.js"></script>
   <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
