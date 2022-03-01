@@ -7,11 +7,11 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["30 üstü", "40 üstü", "50 üstü", "60 üstü", "70 üstü"],
+    labels: ["60 üstü", "50 üstü", "40 üstü", "30 üstü", "20 üstü", "20 altı"],
     datasets: [{
-      data: [55, 30, 15, 25, 20],
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#1cc88a', '#36b9cc'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#17a673', '#2c9faf'],
+      data: [3, 4, 11, 13, 29, 98],
+      backgroundColor: ['#66bb6a', '#ffa426', '#3abaf4', '#757575', '#6777EF', '#fc544b'],
+      hoverBackgroundColor: ['#66bb6a', '#ffa426', '#3abaf4', '#757575', '#6777EF', '#fc544b'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
   },
