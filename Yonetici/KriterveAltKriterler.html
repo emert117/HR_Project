@@ -434,10 +434,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Goal-Seeking (İlk 9 Aday İçin Hangi Kriterler Seçilmeli)</h1>
+            <h1 class="h3 mb-0 text-gray-800">Kriter ve Alt Kriterler</h1>
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./">HR</a></li>
               <li class="breadcrumb-item active" aria-current="page">Yönetici</li>
@@ -445,173 +458,244 @@
           </div>
 
 
-          <div class="row mb-3">
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Toplam Kullanıcı Sayısı</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">10.000</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                        <span>Geçen aydan beri</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-primary"></i>
-                    </div>
-                  </div>
+            <!-- DataTable with Hover -->
+            <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Kriterler</h6>
+                </div>
+                <div class="table-responsive p-3">
+                  <table class="table align-items-center table-flush table-hover" id="dataTableHover">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>Sıra Nu.</th>
+                        <th>Temel Kriter</th>
+                        <th>Alt Kriter</th>
+                        <th>Kriter ID</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Sıra Nu.</th>
+                        <th>Temel Kriter</th>
+                        <th>Alt Kriter</th>
+                        <th>Kriter ID</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Genel Özellikler</td>
+                        <td>Lisans mezuniyet ortalaması?</td>
+                        <td>2.1.1.1</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Genel Özellikler</td>
+                        <td>Yüksek Lisans mezuniyeti mevcut mu?</td>
+                        <td>2.1.1.2</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Genel Özellikler</td>
+                        <td>Doktora mezuniyeti mevcut mu?</td>
+                        <td>2.1.1.3</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Genel Özellikler</td>
+                        <td>Yabancı dil notu? (YDS)</td>
+                        <td>2.1.1.4</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Genel Özellikler</td>
+                        <td>Ehliyet mevcut mu?</td>
+                        <td>2.1.1.5</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Genel Özellikler</td>
+                        <td>5 yıllık mesleki tecrübe</td>
+                        <td>2.1.1.6</td>
+                      </tr>                    <tr>
+                        <td>7</td>
+                        <td>Genel Özellikler</td>
+                        <td>Seyahat engeli var mı?</td>
+                        <td>2.1.1.7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Sahip Olduğu Sertifikalar</td>
+                        <td>CCNA</td>
+                        <td>2.1.2.1</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Sahip Olduğu Sertifikalar</td>
+                        <td>CCNP Enterprise</td>
+                        <td>2.1.2.2</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Sahip Olduğu Sertifikalar</td>
+                        <td>CyberOps Associate</td>
+                        <td>2.1.2.3</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>Sahip Olduğu Sertifikalar</td>
+                        <td>Güvenlik Duvarı Yönetim Sertifikasyonu (A, B, C ürünleri için)</td>
+                        <td>2.1.2.4</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Sahip Olduğu Sertifikalar</td>
+                        <td>MCSA</td>
+                        <td>2.1.2.5</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>Sahip Olduğu Sertifikalar</td>
+                        <td>CCIE Enterprise</td>
+                        <td>2.1.2.6</td>
+                      </tr>                    <tr>
+                        <td>14</td>
+                        <td>Sahip Olduğu Sertifikalar</td>
+                        <td>LPIC-1</td>
+                        <td>2.1.2.7</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>Teknik Mülakat</td>
+                        <td>Windows İşletim sistemi konusunda bilgi sahibi mi?</td>
+                        <td>2.2.0.1</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>Teknik Mülakat</td>
+                        <td>Linux İşletim sistemi konusunda bilgi sahibi mi?</td>
+                        <td>2.2.0.2</td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>Teknik Mülakat</td>
+                        <td>TCP/IP, Routing, LAN, VLAN ve Switching konularına hakim mi?</td>
+                        <td>2.2.0.3</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>Teknik Mülakat</td>
+                        <td>Firewall kurulum & yönetim konularında bilgi sahibi mi?</td>
+                        <td>2.2.0.4</td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>Teknik Mülakat</td>
+                        <td>Network Monitoring uygulamaları hakkında bilgi ve tecrübe sahibi mi?</td>
+                        <td>2.2.0.5</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>Teknik Mülakat</td>
+                        <td>Temel Sistem Güvenliği konusunda bilgi sahibi mi?</td>
+                        <td>2.2.0.6</td>
+                      </tr>                    <tr>
+                        <td>21</td>
+                        <td>Teknik Mülakat</td>
+                        <td>DLP, Mail Gateway, Anti-Virüs vb. uç nokta güvenlik ürünleri yönetimi konusunda bilgi sahibi mi?</td>
+                        <td>2.2.0.7</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>Mesleğin Gerektirdiği Kişisel Özellikler</td>
+                        <td>Kendisini geliştirmeye açık mı?</td>
+                        <td>2.3.1.1</td>
+                      </tr>
+                      <tr>
+                        <td>23</td>
+                        <td>Mesleğin Gerektirdiği Kişisel Özellikler</td>
+                        <td>Meraklı ve kavrayıcı mı?</td>
+                        <td>2.3.1.2</td>
+                      </tr>
+                      <tr>
+                        <td>24</td>
+                        <td>Mesleğin Gerektirdiği Kişisel Özellikler</td>
+                        <td>Çok yönlü beceriye sahip mi?</td>
+                        <td>2.3.1.3</td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>Mesleğin Gerektirdiği Kişisel Özellikler</td>
+                        <td>Stres altında çalışabilir mi?</td>
+                        <td>2.3.1.4</td>
+                      </tr>
+                      <tr>
+                        <td>26</td>
+                        <td>Mesleğin Gerektirdiği Kişisel Özellikler</td>
+                        <td>Analitik düşünebilir mi?</td>
+                        <td>2.3.1.5</td>
+                      </tr>
+                      <tr>
+                        <td>27</td>
+                        <td>Mesleğin Gerektirdiği Kişisel Özellikler</td>
+                        <td>İş/ Proje takibi konusunda tecrübeli mi?</td>
+                        <td>2.3.1.6</td>
+                      </tr>
+                      <tr>
+                        <td>28</td>
+                        <td>Mesleğin Gerektirdiği Kişisel Özellikler</td>
+                        <td>Sorumluluk alanıyla ilgili teknolojik yenilikleri takip edip hayata geçirmeye istekli mi?</td>
+                        <td>2.3.1.7</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>Genel Kişisel Özellikler</td>
+                        <td>Ekip çalışmasına yatkın mı?</td>
+                        <td>2.3.2.1</td>
+                      </tr>
+                      <tr>
+                        <td>30</td>
+                        <td>Genel Kişisel Özellikler</td>
+                        <td>İnsan ilişkileri güçlü mü?</td>
+                        <td>2.3.2.2</td>
+                      </tr>
+                      <tr>
+                        <td>31</td>
+                        <td>Genel Kişisel Özellikler</td>
+                        <td>Diksiyonu düzgün mü?</td>
+                        <td>2.3.2.3</td>
+                      </tr>
+                      <tr>
+                        <td>32</td>
+                        <td>Genel Kişisel Özellikler</td>
+                        <td>Genel Kültür Seviyesi yeterli mi?</td>
+                        <td>2.3.2.4</td>
+                      </tr>
+                      <tr>
+                        <td>33</td>
+                        <td>Genel Kişisel Özellikler</td>
+                        <td>Özgüven sahibi mi?</td>
+                        <td>2.3.2.5</td>
+                      </tr>
+                      <tr>
+                        <td>34</td>
+                        <td>Genel Kişisel Özellikler</td>
+                        <td>Sabırlı mı?</td>
+                        <td>2.3.2.6</td>
+                      </tr>
+                      <tr>
+                        <td>35</td>
+                        <td>Genel Kişisel Özellikler</td>
+                        <td>Temsil yeteneği mevcut mu?</td>
+                        <td>2.3.2.7</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
-            <!-- Earnings (Annual) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Yayında Olan İlanlar</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
-                        <span>Geçen aydan beri</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-success"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- New User Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Toplam Başvuru (Ağ Uzmanı)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">435</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 8.10%</span>
-                        <span>Geçen aydan beri</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Aranan Kriterde Aday</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">158</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 8.10%</span>
-                        <span>Geçen aydan beri</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div>	
-              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
-            </div>  
-
-
-
-
-
-
-
-          <!-- Modal Logout -->
-          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabelLogout"></h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Çıkış Yapmak İstediğine Emin misin?</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">İptal</button>
-                  <a href="login.html" class="btn btn-primary">Çıkış</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-            <!-- Simple Tables -->
-            <div class="card">
-              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Kriterler</h6>
-              </div>
-              <div class="table-responsive">
-                <table class="table align-items-center table-flush">
-                  <thead class="thead-light">
-                    <tr>
-                      <th>Sıra Nu.</th>
-                      <th>Kriter ID</th>
-                      <th>Kriter İsmi</th>
-                      <th>Mevcut Global Ağırlığı</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>2.1.1.2</td>
-                      <td>Yüksek Lisans Mezuniyet Durumu</td>
-                      <td>0.0099</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>2.1.1.5</td>
-                      <td>Ehliyet Durumu</td>
-                      <td>0.0178</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>2.1.2.1</td>
-                      <td>CCNA</td>
-                      <td>0.0497</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>2.1.2.2</td>
-                      <td>CCNP Enterprise</td>
-                      <td>0.0646</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>2.1.2.7</td>
-                      <td>LPIC-1</td>
-                      <td>0.0270</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
 
 
             <div>	
@@ -647,8 +731,8 @@
   <script src="js/ruang-admin.min.js"></script>
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="js/demo/chart-area-demo.js"></script>  
-  <script src="js/demo/chart-pie-demo.js"></script>
-  <script src="js/demo/chart-bar-demo.js"></script>
+  <script src="js/demo/chart-pie-demo-Ehliyet.js"></script>
+  <script src="js/demo/chart-bar-demo-Ehliyet.js"></script>
 
   <script src="vendor/datatables/jquery.dataTables.min.js"></script>
   <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
